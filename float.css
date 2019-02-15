@@ -1,0 +1,17 @@
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  
+  aside {
+    float: left;
+  }
+  article {
+    float: left;
+  }
+  
+  main {
+    float: left;
+  }
+  
