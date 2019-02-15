@@ -1,11 +1,34 @@
 *, *::after, *::before {
     box-sizing: border-box;
   }
+  .clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  container{text-align: center;}
+  aside {
+    float: right;
+  }
+  section {
+    float: left;
+  }
+  main {
+    float: left;
+  }
   
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    columns: #777;
+    background: #777;
+    margin: 0 auto;
+    width:960px;
+    font-size:18px;
+  }
   .container {
     margin: 0 auto;
-    margin-top: 50px;
-    width: 1000px;
+    margin: 0px;
+    width: 960px;
     color:#777;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -21,32 +44,40 @@
   }
   nav {
     background-color:#ebebeb;
-    height: 100px;
-    padding: 10px;
-    border: 5px solid#777;
+    /* height: 100px; */
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border: 3px solid#777;
     text-align: center
   }
   section {
     background-color:#ebebeb;
-    width: 600px;
-    height: 400px;
-    padding: 10px;
+    width: 495px;
+    /* padding: 10px; */
+    padding-top:30px;
     border: 1px solid#777;
     text-align: center
   }
 
 article {
   background-color:#777;
-  width: 500px;
-  height: 200px;
-  padding: 50px;
+margin: 40px 10px 10px 10px;
+  height: 192px;
+  padding: 10px;
   border: 1px solid #777;
-  text-align: center
+  text-align: center;
+  color:#ebebeb;
 }
+.h1{ background-color:#ebebeb;
+  margin: 20px 10px 10px 10px;
+    padding: 10px;
+    border: 1px solid #777;
+    text-align: center;
+    color:#777}
   aside {
     background-color:#ebebeb;
-    width: 400px;
-    height: 400px;
+    height: 285px;
+    width: 450px;
     padding: 10px;
     border: 1px solid#777;
     text-align: center
@@ -54,7 +85,7 @@ article {
   
   footer {
     background-color:#ebebeb;
-    width: 1000px;
+    width: 960px;
     height: 100px;
     padding: 10px;
     border: 1px solid#777;
